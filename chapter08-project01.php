@@ -33,7 +33,7 @@
             <form role="form" method = "GET">
 			
 			<?php
-				if($_GET["email"] == "" || $_GET["email"] == null)
+				if($email == "" || $email == null)
 				{
 				echo "
 				        <div class='form-group has-error'>
@@ -42,7 +42,7 @@
 						<p class='help-block'>Enter an email</p>
 					    </div>";
 				}
-				elseif($_GET["email"] != "" || $_GET["email"] != null)
+				elseif($email != "" || $email != null)
 				{
 					echo "<div class = 'form-group'>
 					 <label for = 'exampleInputEmail1'>Email Address</label>
@@ -51,7 +51,7 @@
 				}
 				?>
 				<?php
-				if($_GET["password"] == "" || $_GET["password"] == null)
+				if($password == "" || $password == null)
 				{
 				echo "<div class='form-group has-error'>
                 <label for='exampleInputPassword1'>Password</label>
@@ -59,7 +59,7 @@
                 <p class='help-block'>Email and password not found</p>
 				</div>";
 				} 
-				elseif($_GET["password"] != "" || $_GET["password"] != null)
+				elseif($password != "" || $password"] != null)
 				{
 				echo "<div class='form-group'>
                 <label for='exampleInputPassword1'>Password</label>
